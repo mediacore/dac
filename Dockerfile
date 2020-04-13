@@ -8,7 +8,7 @@ RUN yum -y install automake gcc gcc-c++ git patch ncurses-devel openssl-devel li
 RUN yum -y install gcc gcc-c++ kernel-devel automake gsm-devel openssl-devel ncurses-devel newt-devel libuuid-devel jansson-devel libxml2-devel libtool-ltdl libtool-ltdl-devel sqlite-devel lynx bison psmisc make ncurses-devel libtermcap-devel newt-devel libxml2-devel libtiff-devel audiofile-devel gtk2-devel uuid-devel libtool bzip2 wget unixODBC unixODBC-devel
 RUN yum -y install epel-release dmidecode gcc-c++ ncurses-devel libxml2-devel make wget openssl-devel newt-devel kernel-devel sqlite-devel libuuid-devel gtk2-devel jansson-devel binutils-devel libedit libedit-devel
 #INSTALAÇÃO DO SOX
-RUN yum -y install sox  
+RUN yum -y install sox vorbis-tools
 WORKDIR /usr/src
 # RUN svn co http://svn.pjsip.org/repos/pjproject/trunk/ pjproject-trunk
 # WORKDIR /usr/src/pjproject-trunk
